@@ -129,14 +129,14 @@ function wgui_installer {
         elif  [[ $arch == arm* ]]; then
         wget https://github.com/ngoduykhanh/wireguard-ui/releases/download/v0.4.0/wireguard-ui-v0.4.0-linux-arm.tar.gz  -O /opt/wireguard-ui/install.tar.gz
     fi
-    wget https://github.com/daniel-hiller/Wireguard-AIO-installer/blob/main/wgui_service/wgui.path  -O /etc/systemd/system/wgui.path
+    wget https://raw.githubusercontent.com/daniel-hiller/Wireguard-AIO-installer/main/wgui_service/wgui.path  -O /etc/systemd/system/wgui.path
     if [ -f "/bin/systemctl" ]; then
-    wget https://github.com/daniel-hiller/Wireguard-AIO-installer/blob/main/wgui_service/wgui-bin.service  -O /etc/systemd/system/wgui.service
+    wget https://raw.githubusercontent.com/daniel-hiller/Wireguard-AIO-installer/main/wgui_service/wgui-bin.service  -O /etc/systemd/system/wgui.service
     else
-    wget https://github.com/daniel-hiller/Wireguard-AIO-installer/blob/main/wgui_service/wgui-usr.service -O /etc/systemd/system/wgui.service
+    wget https://raw.githubusercontent.com/daniel-hiller/Wireguard-AIO-installer/main/wgui_service/wgui-usr.service -O /etc/systemd/system/wgui.service
     fi
 
-    wget https://github.com/daniel-hiller/Wireguard-AIO-installer/blob/main/wgui_service/wireguard-ui.service  -O /etc/systemd/system/wireguard-ui.service
+    wget https://raw.githubusercontent.com/daniel-hiller/Wireguard-AIO-installer/main/wgui_service/wireguard-ui.service  -O /etc/systemd/system/wireguard-ui.service
 
     cd /opt/wireguard-ui
     tar -xf install.tar.gz
