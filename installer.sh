@@ -2,7 +2,7 @@
 ##################################
 #            Variablen           #
 ##################################
-INSTAVER="Wireguard-AIO-installer V1.0.0 Stand 01.03.2023"
+INSTAVER="Wireguard-AIO-installer V1.0.1 Stand 29.01.2024"
 
 # Installationsverzeichnis
 DIR="/opt/wireguard-ui"
